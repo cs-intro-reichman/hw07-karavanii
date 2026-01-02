@@ -13,7 +13,7 @@ public class Binomial {
 	// Computes the Binomial function, basic version.
 	public static int binomial1(int n, int k) { 
 		if (k > n) return 0;
-		if (k == 0 || n == 0) return 1;
+		if (k == 0 || n == k) return 1;
 			return binomial1(n - 1, k) + binomial1(n - 1, k - 1);
 	 }
 	
@@ -39,7 +39,7 @@ public class Binomial {
 		   	return 0;
 		}
 		// Another base case
-		if (n == 0 || k == 0) {
+		if (n == k || k == 0) {
 		   	memo[n][k] = 1; 
 		   	return 1;
 		}
