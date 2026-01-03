@@ -11,7 +11,7 @@ public class IsSorted {
         if (a[i] > a[i + 1]) {
             return false;
         }
-        return isSortedHelper(a, i + 1);
+        return isSorted(a, i + 1);
     }
 
     public static void main(String[] args) {
